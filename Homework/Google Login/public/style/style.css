@@ -1,0 +1,148 @@
+@import './components/typography.css';
+html{
+    font-family: 'Roboto' ,Arial, sans-serif;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+div#container{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    width: 33%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+div#login-container{
+    border: 1px solid rgb(216, 211, 211);
+    border-radius: 4px;
+    /*daha ince nece olur*/
+    border-width: thin;
+}
+header svg{
+    width: 20%;
+    /*burda display inline-block verdim ama margin: auto ishlemedi*/
+    display: block;
+    margin: auto;
+    
+}
+
+h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+    padding-bottom: 20px;
+    color: #202124;
+}
+#login-title{
+    text-align: center;
+    font-size: 16px;
+    color: #202124;
+}
+form{
+    padding: 40px;
+    padding-bottom: 80px;
+}
+form input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 17px;
+    border: 1px solid rgb(182, 178, 178);
+    border-radius: 4px;
+    font-size: 16px;
+}
+form div#focus+div{
+    padding-top: 10px;
+    font-size: 15px;
+}
+a{
+    color: #1a73e8;
+    text-decoration: none;
+}
+div#info{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+div#form-content{
+    position: relative;
+}
+form button{
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+div#form-content button:nth-of-type(1){
+    background-color: white;
+    color: #1a73e8;
+}
+div#form-content button:nth-of-type(1):hover{
+    background-color: rgb(245, 245, 244);
+    color: #0a3d80;
+}
+div#form-content button:nth-of-type(2){
+    position: absolute;
+    right: 0%;
+    background-color: #1a73e8;
+    color: white;
+    padding-right: 23px;
+    padding-left: 23px;
+    
+}
+/*position verilmis buttonlara hover etmek olmur? niye*/
+#next-button:hover{
+    background-color: yellow;
+}
+
+footer{
+    padding-top: 20px;
+}
+footer #footer-second-part{
+    position: absolute;
+    right: 0%;
+}
+footer #footer-second-part a{
+    color: #757575;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+footer #footer-first-part select{
+    cursor: pointer;
+    color: #202124;
+    border: none;
+    outline: none;
+    
+}
+div#focus{
+    position: relative;
+    
+}
+div#focus span{
+    position: absolute;
+    transition:all 0.2s;
+    top: 18px;
+    left: 18px;
+    font-size: 15px;
+    color: rgb(151, 147, 147);
+    background-color: white;
+    
+}
+
+div#focus input:focus{
+    outline: none;
+    border: 1px solid #1a73e8;
+}
+div#focus input:focus+span{
+    display: inline-block;
+    color: #1a73e8;
+    transform: translate(-5px, -25px);
+    font-size: 13px;
+    
+}
