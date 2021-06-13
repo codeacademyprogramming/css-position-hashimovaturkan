@@ -135,14 +135,13 @@ div#focus span{
     
 }
 
-div#focus input:focus{
+div#focus:focus-within input{
     outline: none;
     border: 1px solid #1a73e8;
 }
-div#focus input:focus+span{
+div#focus:focus-within>span{
     display: inline-block;
     color: #1a73e8;
     transform: translate(-5px, -25px);
     font-size: 13px;
-    
 }
