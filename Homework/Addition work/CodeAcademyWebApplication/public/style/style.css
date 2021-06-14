@@ -1,0 +1,691 @@
+@import './components/typography.css';
+@import './components/icons.css';
+*{
+    padding: 0%;
+    margin: 0%;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
+div#container{
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: white;
+    position: relative;
+}
+section#first-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    
+}
+section#first-header address{
+    display: inline-block;
+    color: #4a4a4a;
+    font-size: 12px;
+    font-weight: 300;
+    padding-right: 5px;
+    font-style: normal;
+}
+section#first-header a{
+    color: #4a4a4a;
+    font-weight: 700;
+    font-size: 12px;
+}
+div#fh-right{
+    display: flex;
+    align-items: center;
+}
+div#fh-right svg{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    margin-left:10px;
+}
+div#fh-right div{
+    margin-left: 40px;
+}
+div#fh-right div a{
+    padding-top: 19px;
+    padding-bottom: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: yellow;
+    font-size: 13px;
+}
+header div.swiper-slide {
+    height: 800px;
+
+}
+header div.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+div#header-wrapper{
+    position: relative;
+
+}
+div#wrapper{
+    position: relative;
+    z-index: 999999999;
+}
+div#header-nav{
+    position: absolute;
+    z-index: 999;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+div#header-nav nav ul li{
+    display: inline-block;
+}
+div#code-logo{
+    padding-right: 150px;
+}
+
+div#header-nav nav{
+    width: 100%;
+}
+div#header-nav nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div#header-nav nav ul a{
+    color: white;
+}
+/*sticky*/
+div.nav-part{
+    /*position: sticky;*/
+    z-index: 9999;
+    top: 0%;
+}
+
+section#educational-program{
+    padding: 130px 70px;
+    background-color: white;
+}
+div#ep-upper-part {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+
+}
+div#program-text{
+   width: 50%;
+   padding-right: 80px;
+}
+a.program{
+    width: 25%;
+    background-color: white;
+    height: 250px;
+    border: 1px solid rgb(214, 210, 210);
+    transition-property: all;
+    transition-duration: 0.5s;
+    padding: 20px;
+    
+}
+a.program>div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+span#edu-text{
+    font-size: 50px;
+    font-weight: normal;
+}
+span#edu-text h2{
+    font-weight: 600;
+    color: #323232;
+}
+div#program-text div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #323232;
+}
+div#pt-content{
+    margin-top: -50px;
+}
+div#pt-content a{
+    font-weight: 600;
+    color: #323232;
+}
+
+div#pt-content a::after{
+    content: '>';
+    padding-left: 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+div#pt-content a:hover::after{
+    color: yellow;
+    padding-left: 20px;
+}
+div#ep-lower-part{
+    display: flex;
+    flex-direction: row;
+}
+a.program:hover{
+    transform: scale(1.1);
+}
+a.program h2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 21px;
+    color: #323232;
+}
+a.program:hover h2{
+    color: white;
+}
+/*alinmadi svgleri ag elemek :(*/
+a.program:hover svg{
+    color: white;
+    fill: white;
+    stop-color: white;
+}
+a#digital-marketing:hover{
+    background-color:rgb(115, 66, 165);
+    border: rgb(115, 66, 165);
+}
+a#three-d:hover{
+    background-color:orangered;
+    border: orangered;
+}
+a#two-d:hover{
+    background-color:palevioletred;
+    border: palevioletred;
+}
+a#programming:hover{
+    background-color: rgba(18, 146, 231);
+    border: rgba(18, 146, 231);
+}
+a#design:hover{
+    background-color: yellow;
+    border: yellow;
+}
+a#system:hover{
+    background-color: green;
+    border: green;
+    
+}
+section#back{
+    --height:450px;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    background-image: url("../assets/img/image1.jpg");
+    height: var(--height);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+.wrapper-border span{
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: white;
+    color: #323232;
+    font-weight:  700;
+    font-size: 32px;
+}
+div#back-lower span{
+    border: 5px solid #323232;
+}
+/*burda display:flex; flex-direction:column; align-items:cover; eledim ama ortalamadi*/
+div#back-align-items{
+    margin-top: 200px;
+}
+/*burda azca duzgun yazmadim kodu.... responsivlik baximindan*/
+section#why-code-academy{
+    background-color: white;
+    padding-top: 600px;
+    padding-bottom: 150px;
+}
+div#why-upper span{
+    font-size: 50px;
+    color: #323232;
+    font-weight: lighter;
+}
+div#why-upper h2{
+    font-size: 50px;
+    color: #323232;
+    font-weight: bolder;
+    
+}
+div#why-upper img{
+    display: inline-block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+div#why-upper p{
+    width: 50%;
+    color: #323232;
+    font-size: 16px;
+}
+div#why-lower{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div#why-lower article{
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 50px;
+}
+/*hover eliyende standart ekrandan kenara cixsin eliyenmedim*/
+div#article-container{
+    background-color: white;
+    width: 98%;
+
+}
+div#why-lower article:nth-of-type(even) div#article-container{
+    position: absolute;
+    right: 0%;
+}
+div#article-upper{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+div#article-upper> div{
+    position: relative;
+}
+div#article-img{
+    width: 230px;
+    height: 200px;
+    overflow: hidden;
+}
+div#article-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+div#article-text{
+    position: absolute;
+    width: 50%;
+    right: 0%;
+    bottom: 0;
+
+}
+div#article-text h2{
+    width: 50%;
+    color: black;
+    padding-bottom: 30px;
+    font-size: 21px;
+}
+div#article-text p{
+    color:#323232;
+    font-size: 16px;
+}
+div#article-upper:hover{
+    box-shadow: 0 8px 30px 0 rgb(0 0 0 / 7%);
+}
+
+section#partner{
+    background-color: white;
+    padding-bottom: 150px;
+}
+div#partner-upper-part{
+    padding-left: 350px;
+    padding-right: 350px;
+    text-align: center;
+}
+section#partner div#partner-upper-part h2{
+    color: #323232;
+    font-size: 50px;
+    font-weight: 600;
+}
+section#partner div#partner-upper-part h2:first-of-type{
+    font-weight: lighter;
+}
+
+section#partner div#partner-upper-part p{
+    color: #323232;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+section#partner div#partner-upper-part img{
+    padding-bottom: 40px;
+}
+div#partner-lower-part{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+
+}
+div#partner-lower-part img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: all .5s;
+}
+
+div#partner-lower-part img:hover{
+    filter: none;
+}
+section#future{
+    padding-bottom: 200px;
+    background-color: white;
+}
+div#future-container{
+    padding-left: 350px;
+    padding-right: 350px;
+    text-align: center;
+    background-color: white;
+}
+div#future-container h2{
+    color: #323232;
+    font-size: 50px;
+    font-weight: 700;
+}
+div#future-container p{
+    color: #323232;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+div#future-container a{
+    color: #323232;
+    font-size: 16px;
+    font-weight: 800;
+    border-bottom: 2px solid yellow;
+    transition: all .5s;
+}
+div#future-container a:hover{
+    border-bottom: 3px solid yellow;
+}
+section#have-question{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    background-image: url(../assets/img/Sualiniz-var_c3Xp8Bz.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+div#have-question-container{
+    padding: 100px 70px;
+    color:  #323232;
+    display: flex;
+    width: 82%;
+    flex-direction: row;
+    padding-bottom: 100px;
+    
+}
+div#question-left>h2{
+    color: #323232;
+    font-size: 50px;
+    font-weight: normal;
+}
+div#question-left>div{
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 70px;
+}
+div#question-left>div h2{
+    color: #323232;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+div#question-left>div p{
+    font-size: 16px;
+}
+div#question-right{
+    width: 900px;
+    background-color: white;
+}
+div#question-right form>div{
+    margin-bottom: 10px;
+}
+div#tel{
+    border:1px solid rgb(190, 190, 190);
+}
+div#your-choose{
+    border:1px solid rgb(190, 190, 190);
+}
+input{
+    height: 60px;
+    outline: none;
+    font-size: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid rgb(190, 190, 190);
+}
+div#placeholder-input{
+    position: relative;
+}
+div#input-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div#placeholder-input div{
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    left: 30px;
+    top:20px;
+    color: grey;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: all .5s;
+}
+
+
+div#placeholder-input:focus-within>div{
+    color:#323232;
+    transform: translate(-13px,-30px);
+    font-size: 13px;
+    font-weight: bolder;
+}
+div#placeholder-input:focus-within input{
+    border: 1px solid white;
+    border: 1px solid  yellow;
+}
+div#tel-no{
+    width: 30%;
+    background-color: white;
+    position: relative;
+}
+input#tel{
+    width: 70%;
+    border: none;
+    
+}
+div#tel{
+   display: flex;
+   flex-direction: row;
+   cursor: pointer;
+}
+div#open-tel-no{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: white;
+    display: none;
+    
+}
+div#open-tel-no ul li a{
+    display: block;
+    color: #323232;
+    padding: 10px 25px;
+    text-align: center;
+
+}
+div#upper-lower-icon{
+    display: inline-block;
+    position: absolute;
+    font-size: 30px;
+    color:gray ;
+    right: 15%;
+    top: 20%;
+    transform: rotate(90deg);
+}
+div#tel-no > span{
+    position: absolute;
+    top: 33%;
+    right: 50%;
+    color: gray;
+}
+div#tel-no:focus-within div#upper-lower-icon{
+    transform: rotate(270deg);
+}
+div#tel-no:focus-within div#open-tel-no{
+    display: inline-block;
+}
+div#tel > input{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+div#choose{
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+div#upper-lower-icon-2{
+    position: absolute;
+    font-size: 30px;
+    top: 20%;
+    color: gray;
+    right: 8%;
+    transform: rotate(90deg);
+}
+div#chooses{
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top:100%;
+    display: none;
+}
+
+div#chooses ul{
+    display: flex;
+    flex-direction: column;
+}
+div#chooses ul a{
+    display: inline-block;
+    color: gray;
+    padding: 10px 25px;
+    text-align: center;
+}
+div#choose:focus-within div#upper-lower-icon-2{
+    transform: rotate(270deg);
+}
+div#choose:focus-within div#chooses{
+    display: inline-block;
+}
+div#choose:focus-within{
+    border: 1px solid yellow;
+}
+button#apply-btn{
+    display: inline-block;
+    height: 60px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: yellow;
+    cursor: pointer;
+}
+/*burdada sehvlik eledim responsivlik baximindan*/
+footer{
+    position: relative;
+    margin-top: 520px;
+    background-color: white;
+    height: 100vh;
+}
+footer #footer-container{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    background-color: white;
+    z-index: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 100%;
+}
+footer #footer-container #footer-upper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+footer #footer-container ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer #footer-container ul li a{
+    color: gray;
+    font-size: 14px;
+}
+footer #footer-container ul li a:hover{
+    padding-bottom: 2px;
+    border-bottom: 1px solid yellow;
+}
+footer #footer-container h3{
+    padding-bottom: 10px;
+}
+footer #footer-container #footer-middle{
+    display: flex;
+    justify-content: center;
+    color: gray;
+    background-color: rgb(247, 243, 243);
+}
+footer #footer-container #footer-middle a{
+    color: gray;
+    font-weight: 600;
+}
+footer #footer-container #footer-middle address{
+    font-style: normal;
+}
+footer #footer-container #footer-middle>*:not(:last-child)::after{
+    content: '|';
+    padding-right: 5px;
+    padding-left: 5px;
+}
+div#media-icon-footer svg{
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    fill: #323232;
+}
+div#footer-lower>span{
+    font-size: 13px;
+}
+div#footer-lower{
+    padding-top: 80px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #323232;
+}
+
+
+
+
